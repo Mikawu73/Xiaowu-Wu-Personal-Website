@@ -1,0 +1,4 @@
+.codex-runtime/
+.sites/
+node_modules/
+*.zip
