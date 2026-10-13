@@ -1,0 +1,12 @@
+---
+layout: null
+---
+{%- capture homepage -%}
+{%- include_relative dist/index.html -%}
+{%- endcapture -%}
+{{- homepage
+  | replace: 'href="styles.css"', 'href="dist/styles.css"'
+  | replace: 'src="script.js"', 'src="dist/script.js"'
+  | replace: 'href="assets/', 'href="dist/assets/'
+  | replace: 'src="assets/', 'src="dist/assets/'
+-}}

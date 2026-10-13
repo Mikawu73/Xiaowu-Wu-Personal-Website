@@ -26,3 +26,14 @@ Detailed education and experience, resume download links, and hero buttons have 
 - `dist/assets/tools/`: source SVGs and icon attribution/license.
 
 The hero illustration is decorative, not measured data. No invented project outcomes or proficiency ratings are displayed.
+
+## GitHub Pages
+
+The site uses GitHub Pages' existing branch deployment: `main`, `/(root)`.
+The root `index.html` is a small Jekyll entry point that includes `dist/index.html`
+and adjusts its stylesheet, script and asset paths. It disables the default theme
+layout, so the project URL shows the portfolio instead of this README.
+
+Keep editing `dist/index.html` and its assets. The root entry point reuses that
+content on every Pages build; no second copy of the page needs to be maintained.
+Local previews and Sites deployments continue to serve `dist/` directly.
